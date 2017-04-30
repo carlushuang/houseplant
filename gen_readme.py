@@ -8,6 +8,9 @@
 # on linux, install exiftran (apt-get install exiftran)
 # and run "exiftran -ai <pic>"
 #
+# another issue, do not let image file size too large if taken on iphone.
+# use command "convert [xxx.jpg] -resize 38% [xxx.jpg]" to convert.
+# use command "identify [xxx.jpg]" can see image info.
 """
 generate README.md based on path containing pics
 """
@@ -19,7 +22,7 @@ from string import Template
 PICS_STORE_FOLDER='records'
 SINGLE_MD_HEADER=(
     '# ${title}\n'
-    '---\n'
+    '\n'
 )
 SINGLE_MD_ITEM=(
     '### ${item_name}  \n'
