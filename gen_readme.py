@@ -9,8 +9,10 @@
 # and run "exiftran -ai <pic>"
 #
 # another issue, do not let image file size too large if taken on iphone.
-# use command "convert [xxx.jpg] -resize 38% [xxx.jpg]" to convert.
-# use command "identify [xxx.jpg]" can see image info.
+# use command to convert(keep width to fix size)
+#   for f in *.jpg ; do convert $f -resize '1000' $f ; done
+# use command "identify *.jpg" can see image info.
+#
 """
 generate README.md based on path containing pics
 """
