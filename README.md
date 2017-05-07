@@ -8,3 +8,4 @@ Use __gen_readme.py__ to auto generate all the sub readme.md which should placed
 Currently available images:
 
 * [2017-04-30](records/2017-04-30/README.md)
+* [2017-05-07](records/2017-05-07/README.md)
