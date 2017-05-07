@@ -13,6 +13,8 @@
 #   for f in *.jpg ; do convert $f -resize '1000' $f ; done
 # use command "identify *.jpg" can see image info.
 #
+# preview markdown, can use atom text editor, and Ctrl+Shift+m
+#
 """
 generate README.md based on path containing pics
 """
