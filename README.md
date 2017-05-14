@@ -9,3 +9,4 @@ Currently available images:
 
 * [2017-04-30](records/2017-04-30/README.md)
 * [2017-05-07](records/2017-05-07/README.md)
+* [2017-05-14](records/2017-05-14/README.md)
