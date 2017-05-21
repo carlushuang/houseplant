@@ -71,7 +71,7 @@ def gen_pic_group(path):
     pi=PicGroup()
     pi.root=path
     pi.date=os.path.basename(path)  # TODO: validate date
-    for _f in files:
+    for _f in sorted(files):
         if _f.endswith('.jpg') or _f.endswith('.jpeg'):
             pi.pics.append(_f)
         if _f == "README.md" or _f == "readme.md":
@@ -91,7 +91,7 @@ if __name__ == '__main__':
     _pic_path = args.pic_path
     if not _pic_path:
         # not parsed in, we generate a default list
-        for _one in os.listdir(PICS_STORE_FOLDER):
+        for _one in sorted(os.listdir(PICS_STORE_FOLDER)):
             _1 = os.path.join(PICS_STORE_FOLDER,_one)
             if os.path.isdir(_1):
                 _pic_path.append(_1)
